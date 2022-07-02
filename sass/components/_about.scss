@@ -1,5 +1,9 @@
 .section-about {
+  display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .section-about__title {

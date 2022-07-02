@@ -2,17 +2,20 @@
   background-color: var(--fourth-background-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(/images/hero-mob.jpg);
-  height: 600px;
+  height: 400px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -46,22 +49,16 @@
   text-transform: uppercase;
   color: #ffffff;
   @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.62;
+    color: var(--third-background-color);
+    max-width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    color: var(--third-background-color);
-    max-width: 696px;
   }
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
-  // color: var(--third-background-color);
-  // margin-bottom: 30px;
-  // margin-left: auto;
-  // margin-right: auto;
-  //   max-width: 696px;
 }
 
 .hero__button {

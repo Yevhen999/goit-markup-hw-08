@@ -1293,6 +1293,7 @@ img {
 .filters {
   display: flex;
   flex-wrap: wrap;
+  min-width: 480px;
 }
 .filters .filters-item:nth-child(-n+3) {
   margin-bottom: 15px;
@@ -1321,6 +1322,11 @@ img {
   }
   .filters .filters-item:nth-child(-n+5) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
   }
 }
 
@@ -1376,25 +1382,53 @@ img {
   color: var(--second-color);
 }
 
-.portfolio-list .portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
+.portfolio-list {
+  min-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
   }
 }
-.portfolio-list .portfolio-item {
-  width: calc((100% - 60px) / 2);
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    margin-right: -30px;
+  }
 }
-.portfolio-list .portfolio-item:nth-child(2n) {
-  margin-right: 0;
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio-item:nth-child(9) {
+    margin-bottom: 0;
+  }
 }
-.portfolio-list .portfolio-item:nth-child(9) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: calc((100% - 90px) / 3);
+  }
+  .portfolio-item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .portfolio-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio-item:nth-child(n+3) {
+    margin-bottom: 0;
+  }
+  .portfolio-item:nth-child(-n+6) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-item {

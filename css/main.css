@@ -1281,17 +1281,47 @@ img {
   background-color: #188ce8;
 }
 
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
 .portfolio h1 {
   display: none;
 }
 
 .filters {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
-.filters .filters-item:not(:last-child) {
+.filters .filters-item:nth-child(-n+3) {
+  margin-bottom: 15px;
+}
+.filters .filters-item:nth-child(-n+2) {
   margin-right: 8px;
+}
+.filters .filters-item:nth-child(4n) {
+  margin-right: 8px;
+}
+.filters .filters-item:nth-last-child(-n+2) {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+  }
+  .filters .filters-item:nth-child(3n) {
+    margin-right: 8px;
+  }
+  .filters .filters-item:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .filters .filters-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .filters .filters-item:nth-child(-n+5) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-btn {
@@ -1323,6 +1353,11 @@ img {
   border: 1px solid #eeeeee;
   border-top: none;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    flex-grow: 1;
+  }
+}
 
 .portfolio-title {
   font-weight: 700;
@@ -1341,19 +1376,24 @@ img {
   color: var(--second-color);
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-list .portfolio-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .portfolio-list .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 60px) / 2);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-list .portfolio-item:nth-child(3n) {
+.portfolio-list .portfolio-item:nth-child(2n) {
   margin-right: 0;
 }
-.portfolio-list .portfolio-item:nth-last-child(-n+3) {
+.portfolio-list .portfolio-item:nth-child(9) {
   margin-bottom: 0;
 }
 
@@ -1373,6 +1413,16 @@ img {
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-grow {
+  height: 100%;
 }
 
 .portfolio-overlay {

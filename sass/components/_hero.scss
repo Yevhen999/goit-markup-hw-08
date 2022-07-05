@@ -20,19 +20,22 @@
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-mob-2x.jpg);
   }
 }
 
 @media (min-width: 481px) {
   .hero {
-    background-image: url(/images/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-tablet.jpg);
   }
 }
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero-tablet-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-tablet-2x.jpg);
   }
 }
 

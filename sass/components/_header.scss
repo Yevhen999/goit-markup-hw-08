@@ -9,8 +9,8 @@
     padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -100,7 +100,7 @@
   bottom: -35px;
   left: 0;
   @media screen and (min-width: 1200px) {
-    bottom: -39px;
+    bottom: -32px;
   }
 }
 
@@ -209,6 +209,7 @@
   z-index: 1;
   width: 100vw;
   height: 100vh;
+
   padding-top: 21px;
   padding-bottom: 48px;
   background-color: var(--third-background-color);
@@ -216,7 +217,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
   }
 }

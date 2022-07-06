@@ -686,7 +686,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -711,6 +710,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 120px) / 4);
+  }
   .team-list__item:nth-child(-n+3) {
     margin-bottom: 0;
   }

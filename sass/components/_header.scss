@@ -217,16 +217,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 101vh;
     overflow-y: auto;
   }
 }
 
 .mob-container {
   margin: 0 auto;
-  padding-left: 15px;
+  padding-left: 40px;
   padding-right: 15px;
   height: 100%;
+  padding-bottom: 48px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -270,6 +271,10 @@
   color: #212121;
 }
 
+.mob-nav-list__link.current {
+  color: var(--accent-color);
+}
+
 .mob-contacts-list__item {
   margin-bottom: 32px;
 }
@@ -296,6 +301,14 @@
 
 .mob-soc-list {
   display: flex;
+  max-width: 100%;
+}
+
+.mob-soc-list__wrap {
+  // max-width: 100%;
+}
+
+.mob-soc-list__item:last-child {
 }
 
 .mob-soc-list__item:not(:last-child) {
@@ -305,6 +318,7 @@
 }
 
 .mob-soc-list__link {
+  max-width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

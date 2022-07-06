@@ -81,7 +81,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="mob-soc-list__wrap">
             <ul class="mob-contacts-list list">
               <li class="mob-contacts-list__item contacts-list__item--tel item">
                 <a
@@ -200,13 +200,15 @@
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                srcset="./images/designer-450-min.jpg 1x, ./images/designer-450-2x-min.jpg 2x"
-                src="./images/designer-450-min.jpg"
-                alt="product-designer"
-                class="team-list__img"
-                width="270"
-              />
+              <picture>
+                <img
+                  srcset="./images/designer-450-min.jpg 1x, ./images/designer-450-2x-min.jpg 2x"
+                  src="./images/designer-450-min.jpg"
+                  alt="product-designer"
+                  class="team-list__img"
+                  width="270"
+                />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__proffession">Product Designer</p>
@@ -243,13 +245,15 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                srcset="./images/developer-450-min.jpg 1x, ./images/developer-450-2x-min.jpg 2x"
-                src="./images/developer-450-min.jpg"
-                alt="frontend-developer"
-                class="team-list__img"
-                width="270"
-              />
+              <picture>
+                <img
+                  srcset="./images/developer-450-min.jpg 1x, ./images/developer-450-2x-min.jpg 2x"
+                  src="./images/developer-450-min.jpg"
+                  alt="frontend-developer"
+                  class="team-list__img"
+                  width="270"
+                />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__proffession">Frontend Developer</p>
@@ -286,13 +290,15 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                srcset="./images/marketing-450-min.jpg 1x, ./images/marketing-450-2x-min.jpg 2x"
-                src="./images/marketing-450-min.jpg"
-                alt="marketing"
-                class="team-list__img"
-                width="270"
-              />
+              <picture>
+                <img
+                  srcset="./images/marketing-450-min.jpg 1x, ./images/marketing-450-2x-min.jpg 2x"
+                  src="./images/marketing-450-min.jpg"
+                  alt="marketing"
+                  class="team-list__img"
+                  width="270"
+                />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__proffession">Marketing</p>
@@ -329,13 +335,15 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                srcset="./images/ui-450-min.jpg 1x, ./images/ui-450-2x-min.jpg 2x"
-                src="./images/ui-450-min.jpg"
-                alt="ui-designer"
-                class="team-list__img"
-                width="270"
-              />
+              <picture>
+                <img
+                  srcset="./images/ui-450-min.jpg 1x, ./images/ui-450-2x-min.jpg 2x"
+                  src="./images/ui-450-min.jpg"
+                  alt="ui-designer"
+                  class="team-list__img"
+                  width="270"
+                />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__proffession">UI Designer</p>
@@ -555,7 +563,9 @@
             <span class="checkbox__icon"></span>
             <label for="checkbox" class="checkbox__label"
               >Соглашаюсь с рассылкой и принимаю
-              <span><a href="" class="checkbox__conditions">Условия договора</a></span></label
+              <span class="checkbox-conditions__wrap"
+                ><a href="" class="checkbox__conditions">Условия договора</a></span
+              ></label
             >
           </div>
           <button type="submit" class="button-submit">Отправить</button>

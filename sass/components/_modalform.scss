@@ -1,4 +1,6 @@
 .modal {
+  position: fixed;
+  height: auto;
   padding: 40px;
   max-width: 450px;
   min-width: 320px;
@@ -114,11 +116,11 @@
 }
 
 .checkbox__label {
+  // max-width: 100%;
   margin-left: 8px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
-  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
   white-space: nowrap;

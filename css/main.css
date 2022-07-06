@@ -59,7 +59,7 @@ body {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -300,15 +300,16 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 101vh;
   overflow-y: auto;
 }
 
 .mob-container {
   margin: 0 auto;
-  padding-left: 15px;
+  padding-left: 40px;
   padding-right: 15px;
   height: 100%;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 480px) {
   .mob-container {
@@ -353,6 +354,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mob-nav-list__link.current {
+  color: var(--accent-color);
 }
 
 .mob-contacts-list__item {
@@ -731,6 +736,7 @@ img {
 
 .team-list__img {
   display: block;
+  width: 100%;
 }
 
 .team-list__wrap {
@@ -892,6 +898,7 @@ img {
 }
 
 .modal {
+  max-width: 100%;
   position: absolute;
   background-color: var(--third-background-color);
   top: 50%;
@@ -1023,6 +1030,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer-soc__title {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-soc__title {
     margin-top: 0;
@@ -1152,6 +1164,8 @@ img {
 }
 
 .modal {
+  position: fixed;
+  height: auto;
   padding: 40px;
   max-width: 450px;
   min-width: 320px;
@@ -1274,7 +1288,7 @@ img {
 .checkbox__label {
   margin-left: 8px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-color);
@@ -1321,7 +1335,7 @@ img {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  min-width: 480px;
+  max-width: 100%;
 }
 .filters .filters-item:nth-child(-n+3) {
   margin-bottom: 15px;
@@ -1426,6 +1440,12 @@ img {
   }
 }
 
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: calc((100% - 60px) / 2);
@@ -1481,6 +1501,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+}
+
+.portfolio-img {
+  width: 100%;
 }
 
 .card-grow {
